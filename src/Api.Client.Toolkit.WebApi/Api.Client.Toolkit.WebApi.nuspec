@@ -1,0 +1,19 @@
+﻿<package>
+  <metadata>
+    <id>Api.Client.Toolkit.WebApi</id>
+    <version>1.0.0.0</version>
+    <authors>Miguel A. Gonzalez</authors>
+    <description>A collection of useful tools for accessing RESTful API backends using the ASP.NET WebApi framework.</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/magonzalez/Api.Client.Toolkit/blob/master/README.markdown</projectUrl>
+    <licenseUrl>https://github.com/magonzalez/Api.Client.Toolkit/blob/master/license.txt</licenseUrl>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.0" />
+      <dependency id="Newtonsoft.Json" />
+      <dependency id="Api.Client.Toolkit.Core" />
+    </dependencies>
+  </metadata>
+  <files>
+	  <file src="build\output\Api.Client.Toolkit.WebApi.*" target="lib" />
+  </files>
+</package>

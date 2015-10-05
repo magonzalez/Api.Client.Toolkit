@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Client.Toolkit.Core", "Api.Client.Toolkit.Core\Api.Client.Toolkit.Core.csproj", "{9DD64133-EA6A-4C0D-BE24-CDAEA5C959D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Client.Toolkit.WebApi", "Api.Client.Toolkit.WebApi\Api.Client.Toolkit.WebApi.csproj", "{36441D4D-6B6D-4A83-9777-708F8BCF01A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{82869660-6095-4D13-9D4F-6FE35DCE731E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D0C5DBB4-EDC4-4F8C-8CAE-D2E50F684557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Client.Toolkit.UnitTests", "Api.Client.Toolkit.UnitTests\Api.Client.Toolkit.UnitTests.csproj", "{4B3C32B0-8020-4F30-9F9E-6628103D1009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Client.Toolkit.IntegrationTests", "Api.Client.Toolkit.IntegrationTests\Api.Client.Toolkit.IntegrationTests.csproj", "{5BBE3753-A6EA-4882-8E25-F169196F8427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{EB584612-8085-4013-A7F0-F1862D0EEDBA}"
+	ProjectSection(SolutionItems) = preProject
+		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{70128C1E-4BD6-4370-9800-CE92E61E824E}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.bat = ..\build.bat
+		..\default.ps1 = ..\default.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DD64133-EA6A-4C0D-BE24-CDAEA5C959D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD64133-EA6A-4C0D-BE24-CDAEA5C959D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD64133-EA6A-4C0D-BE24-CDAEA5C959D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD64133-EA6A-4C0D-BE24-CDAEA5C959D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36441D4D-6B6D-4A83-9777-708F8BCF01A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36441D4D-6B6D-4A83-9777-708F8BCF01A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36441D4D-6B6D-4A83-9777-708F8BCF01A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36441D4D-6B6D-4A83-9777-708F8BCF01A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B3C32B0-8020-4F30-9F9E-6628103D1009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3C32B0-8020-4F30-9F9E-6628103D1009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3C32B0-8020-4F30-9F9E-6628103D1009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3C32B0-8020-4F30-9F9E-6628103D1009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBE3753-A6EA-4882-8E25-F169196F8427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBE3753-A6EA-4882-8E25-F169196F8427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBE3753-A6EA-4882-8E25-F169196F8427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBE3753-A6EA-4882-8E25-F169196F8427}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DD64133-EA6A-4C0D-BE24-CDAEA5C959D1} = {82869660-6095-4D13-9D4F-6FE35DCE731E}
+		{36441D4D-6B6D-4A83-9777-708F8BCF01A9} = {82869660-6095-4D13-9D4F-6FE35DCE731E}
+		{4B3C32B0-8020-4F30-9F9E-6628103D1009} = {D0C5DBB4-EDC4-4F8C-8CAE-D2E50F684557}
+		{5BBE3753-A6EA-4882-8E25-F169196F8427} = {D0C5DBB4-EDC4-4F8C-8CAE-D2E50F684557}
+		{70128C1E-4BD6-4370-9800-CE92E61E824E} = {EB584612-8085-4013-A7F0-F1862D0EEDBA}
+	EndGlobalSection
+EndGlobal
