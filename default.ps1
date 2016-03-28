@@ -1,6 +1,6 @@
 # Generate build label
 if($env:BUILD_NUMBER -ne $null) {
-    $env:buildlabel = "$env:TEAMCITY_PROJECT_NAME $env:TEAMCITY_BUILDCONF_NAME $env:BUILD_NUMBER on $(Get-Date -Format g)"
+    $env:buildlabel = "$env:PROJECT_NAME $env:BUILD_CONF $env:BUILD_NUMBER on $(Get-Date -Format g)"
     $env:buildconfig = "Release"
 	$env:manualbuild = $false
 }
