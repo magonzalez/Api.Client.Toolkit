@@ -9,7 +9,7 @@ namespace Api.Client.Toolkit.WebApi
         protected ReadOnlyApiClient(IApiClientSettings settings, string baseUrl)
             : base(settings)
         {
-            BaseUrl = $"{settings.ApiBaseUri}/{baseUrl}";
+            BaseUrl = string.Format("{0}/{1}", settings.ApiBaseUri, baseUrl);
         }
 
         protected string BaseUrl { get; set; }
@@ -25,7 +25,9 @@ namespace Api.Client.Toolkit.WebApi
 
         public virtual async Task<TDataType> Get(TKeyType id)
         {
-            var response = await Client.GetAsync($"{BaseUrl}/{id}");
+            var uri = string.Format("{0}/{1}", BaseUrl, id);
+
+            var response = await Client.GetAsync(uri);
             if (response.IsSuccessStatusCode)
                 return await response.Content.ReadAsAsync<TDataType>();
 

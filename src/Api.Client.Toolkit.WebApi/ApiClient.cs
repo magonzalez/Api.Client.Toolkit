@@ -30,7 +30,9 @@ namespace Api.Client.Toolkit.WebApi
 
         public virtual async Task<TGetDataType> Update(TKeyType id, TUpdateDataType data)
         {
-            var response = await Client.PutAsJsonAsync($"{BaseUrl}/{id}", data);
+            var uri = string.Format("{0}/{1}", BaseUrl, id);
+
+            var response = await Client.PutAsJsonAsync(uri, data);
             if (response.IsSuccessStatusCode)
                 return await response.Content.ReadAsAsync<TGetDataType>();
 
@@ -39,7 +41,9 @@ namespace Api.Client.Toolkit.WebApi
 
         public virtual async Task Delete(TKeyType id)
         {
-            await Client.DeleteAsync($"{BaseUrl}/{id}");
+            var uri = string.Format("{0}/{1}", BaseUrl, id);
+
+            await Client.DeleteAsync(uri);
         }
     }
 }
