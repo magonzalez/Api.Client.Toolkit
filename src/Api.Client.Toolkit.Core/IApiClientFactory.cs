@@ -2,6 +2,6 @@
 {
     public interface IApiClientFactory
     {
-        IApiClient<TDataType, TKeyType> CreateClient<TDataType, TKeyType>(ApiClientType type);
+        IApiClient<TDataType, TDataType, TDataType, TKeyType> CreateClient<TDataType, TKeyType>(ApiClientType type);
     }
 }

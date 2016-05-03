@@ -2,10 +2,10 @@
 
 namespace Api.Client.Toolkit
 {
-    public interface IWriteApiClient<TDataType, in TKeyType> : IApiClientBase
+    public interface IWriteApiClient<TGetDataType, in TCreateDataType, in TUpdateDataType, in TKeyType> : IApiClientBase
     {
-        Task<TDataType> Create(TDataType data);
-        Task<TDataType> Update(TKeyType id, TDataType data);
+        Task<TGetDataType> Create(TCreateDataType data);
+        Task<TGetDataType> Update(TKeyType id, TUpdateDataType data);
         Task Delete(TKeyType id);
     }
 }

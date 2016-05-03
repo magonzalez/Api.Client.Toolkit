@@ -11,6 +11,6 @@ namespace Api.Client.Toolkit.WebApi
 
         protected IApiKeyApiClientSettings Settings { get; private set; }
 
-        public abstract IApiClient<TDataType, TKeyType> CreateClient<TDataType, TKeyType>(ApiClientType type);
+        public abstract IApiClient<TDataType, TDataType, TDataType, TKeyType> CreateClient<TDataType, TKeyType>(ApiClientType type);
     }
 }
